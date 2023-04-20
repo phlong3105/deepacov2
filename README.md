@@ -45,7 +45,7 @@ deepacov2
   |     |    |__ supr
   |     |         |__ config
   |     |               |__ aic23_autocheckout
-  |		|                    |__ testA_1.py
+  |     |                    |__ testA_1.py
   |     |                    |__ testA_2.py
   |     |                    |__ testA_3.py
   |     |                    |__ testA_4.py
