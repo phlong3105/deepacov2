@@ -37,26 +37,26 @@ deepacov2
   |           |     |__ testB_2.mp4
   |           |     |__ testB_3.mp4
   |           |     |__ testB_4.mp4
-  |			  |__ train
-  |			  |__ val
+  |           |__ train
+  |           |__ val
   |__ run
   |__ src
-  |		|__ app
-  |		|	  |__ supr
-  |		|			|__ config
-  |		|				  |__ aic23_autocheckout
-  |		|						|__ testA_1.py
-  |		|						|__ testA_2.py
-  |		|						|__ testA_3.py
-  |		|						|__ testA_4.py
-  |		|						|__ testB_1.py
-  |		|						|__ testB_2.py
-  |		|						|__ testB_3.py
-  |		|						|__ testB_4.py
-  |		|__ lib
-  |		|__ mon
+  |     |__ app
+  |     |    |__ supr
+  |     |         |__ config
+  |     |               |__ aic23_autocheckout
+  |		|                    |__ testA_1.py
+  |     |                    |__ testA_2.py
+  |     |                    |__ testA_3.py
+  |     |                    |__ testA_4.py
+  |     |                    |__ testB_1.py
+  |     |                    |__ testB_2.py
+  |     |                    |__ testB_3.py
+  |     |                    |__ testB_4.py
+  |     |__ lib
+  |     |__ mon
   |__ zoo		
-  	    |__ yolov8
+        |__ yolov8
 ```
   
 <details open>
