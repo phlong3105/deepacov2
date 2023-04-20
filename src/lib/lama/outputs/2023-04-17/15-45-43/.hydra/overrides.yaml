@@ -1,0 +1,6 @@
+- image_dir=/mnt/100-workspace/104-code/aic23_track4/data/aic23-autocheckout/testA/deblur/testA_1
+- label_dir=/mnt/100-workspace/104-code/aic23_track4/data/aic23-autocheckout/testA/person/testA_1
+- output_dir=/mnt/100-workspace/104-code/aic23_track4/data/aic23-autocheckout/testA/inpainting/testA_1
+- model.path=/mnt/100-workspace/104-code/aic23_track4/zoo/lama/big-lama-aic
+- dataset.kind=video
+- dataset.dilate=7
