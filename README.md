@@ -63,12 +63,15 @@ deepacov2
 <summary>TestA</summary>
 
 Enter docker container and run the inference script for testA:
+
 ```shell
 cd deepacov2
 conda activate mon
 ./bin/run-video.sh "aic23-autocheckout" "testA" "all" "yes"
 ```
 </details>
+
+The results will be located at: `deepacov2/track4.txt`
 
 <details open>
 <summary>TestB</summary>
@@ -86,11 +89,14 @@ docker cp testB_4.mp4 CONTAINER_ID:/deepacov2/data/aic23-autocheckout/testB/test
 ```
 
 Enter docker container and run the inference script for testB:
+
 ```shell
 cd deepacov2
 conda activate mon
 ./bin/run-video.sh "aic23-autocheckout" "testB" "all" "yes"
 ```
+
+The results will be located at: `deepacov2/track4.txt`
 
 </details>
   
