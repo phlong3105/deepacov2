@@ -13,7 +13,7 @@ The code was implemented and tested on Ubuntu 22.04, Python 3.10 and PyTorch (>=
 The docker image contains all models weights and training data.
 
 ```shell
-docker run --name deepacov2 --gpus all -it deepacov2
+docker run --name deepacov2 --gpus all -it phlong/deepacov2
 ```
 
 </details>
