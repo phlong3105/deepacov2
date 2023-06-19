@@ -65,7 +65,7 @@ deepacov2
 Enter docker container and run the inference script for testA:
 
 ```shell
-cd deepacov2
+cd /mon
 conda activate mon
 ./bin/run-video.sh "aic23-autocheckout" "testA" "all" "yes"
 ```
