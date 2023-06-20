@@ -10,7 +10,13 @@ The code was implemented and tested on Ubuntu 22.04, Python 3.10 and PyTorch (>=
 <details open>
 <summary>Installation using Docker (recommended) </summary>
 
-The docker image contains all models weights and training data.
+The docker image for inference.
+
+```shell
+docker run --name deepacov2 --gpus all -it phlong/deepacov2:infer
+```
+
+The docker image contains all models' weights and training data.
 
 ```shell
 docker run --name deepacov2 --gpus all -it phlong/deepacov2
