@@ -14,7 +14,11 @@ read -e -i "$subset"  -p "Subset [testA, testB]: " subset
 if [ "$dataset" == "aic22-autocheckout" ]; then
   read -e -i "$video" -p "Video [${subset}_1, ${subset}_2, ${subset}_3, ${subset}_4, ${subset}_5, all]: " video
 else
-  read -e -i "$video" -p "Video [${subset}_1, ${subset}_2, ${subset}_3, ${subset}_4, all]: " video
+  if [ "$subset" == "testA" ]; then
+    read -e -i "$video" -p "Video [${subset}_1, ${subset}_2, ${subset}_3, ${subset}_4, all]: " video
+  else
+    read -e -i "$video" -p "Video [${subset}_1, ${subset}_2, ${subset}_3, ${subset}_4, ${subset}_5, all]: " video
+  fi
 fi
 read -e -i "$preprocess" -p "Preprocess [yes, no]: " preprocess
 
@@ -34,10 +38,17 @@ if [ "$video" == "all" ]; then
       video_list+=("${subset}_${var}")
     done
   elif [ "$dataset" == "aic23-autocheckout" ]; then
-    for var in {1..4}
-    do
-      video_list+=("${subset}_${var}")
-    done
+    if [ "$subset" == "testA" ]; then
+      for var in {1..4}
+      do
+        video_list+=("${subset}_${var}")
+      done
+    else
+      for var in {1..5}
+      do
+        video_list+=("${subset}_${var}")
+      done
+    fi
   fi
 else
   video_list=("$video")
