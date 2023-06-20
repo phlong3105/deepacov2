@@ -37,6 +37,7 @@ deepacov2
   |           |     |__ testB_2.mp4
   |           |     |__ testB_3.mp4
   |           |     |__ testB_4.mp4
+  |           |     |__ testB_5.mp4
   |           |__ train
   |           |__ val
   |__ run
@@ -53,6 +54,7 @@ deepacov2
   |     |                    |__ testB_2.py
   |     |                    |__ testB_3.py
   |     |                    |__ testB_4.py
+  |     |                    |__ testB_5.py
   |     |__ lib
   |     |__ mon
   |__ zoo		
@@ -86,12 +88,13 @@ docker cp testB_1.mp4 CONTAINER_ID:/deepacov2/data/aic23-autocheckout/testB/test
 docker cp testB_2.mp4 CONTAINER_ID:/deepacov2/data/aic23-autocheckout/testB/testB_2.mp4
 docker cp testB_3.mp4 CONTAINER_ID:/deepacov2/data/aic23-autocheckout/testB/testB_3.mp4
 docker cp testB_4.mp4 CONTAINER_ID:/deepacov2/data/aic23-autocheckout/testB/testB_4.mp4
+docker cp testB_5.mp4 CONTAINER_ID:/deepacov2/data/aic23-autocheckout/testB/testB_5.mp4
 ```
 
 Enter docker container and run the inference script for testB:
 
 ```shell
-cd deepacov2
+cd /mon
 conda activate mon
 ./bin/run-video.sh "aic23-autocheckout" "testB" "all" "yes"
 ```
