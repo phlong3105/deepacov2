@@ -16,12 +16,6 @@ The docker image for inference.
 docker run --name deepacov2 --gpus all -it phlong/deepacov2:infer
 ```
 
-The docker image contains all models' weights and training data.
-
-```shell
-docker run --name deepacov2 --gpus all -it phlong/deepacov2
-```
-
 </details>
 
 ## Inference
