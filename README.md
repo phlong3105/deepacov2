@@ -78,17 +78,17 @@ The results will be located at: `deepacov2/track4.txt`
 <details open>
 <summary>TestB</summary>
 
-Copy testB videos to `deepacov2/data/aic23-autocheckout/testB/`. Open a new terminal and enter:
+Copy testB videos to `mon/data/aic23-autocheckout/testB/`. Open a new terminal and enter:
 
 ```shell
 # To obtain the CONTAINER_ID:
 docker ps -a
 
-docker cp testB_1.mp4 CONTAINER_ID:/deepacov2/data/aic23-autocheckout/testB/testB_1.mp4
-docker cp testB_2.mp4 CONTAINER_ID:/deepacov2/data/aic23-autocheckout/testB/testB_2.mp4
-docker cp testB_3.mp4 CONTAINER_ID:/deepacov2/data/aic23-autocheckout/testB/testB_3.mp4
-docker cp testB_4.mp4 CONTAINER_ID:/deepacov2/data/aic23-autocheckout/testB/testB_4.mp4
-docker cp testB_5.mp4 CONTAINER_ID:/deepacov2/data/aic23-autocheckout/testB/testB_5.mp4
+docker cp testB_1.mp4 CONTAINER_ID:/mon/data/aic23-autocheckout/testB/testB_1.mp4
+docker cp testB_2.mp4 CONTAINER_ID:/mon/data/aic23-autocheckout/testB/testB_2.mp4
+docker cp testB_3.mp4 CONTAINER_ID:/mon/data/aic23-autocheckout/testB/testB_3.mp4
+docker cp testB_4.mp4 CONTAINER_ID:/mon/data/aic23-autocheckout/testB/testB_4.mp4
+docker cp testB_5.mp4 CONTAINER_ID:/mon/data/aic23-autocheckout/testB/testB_5.mp4
 ```
 
 Enter docker container and run the inference script for testB:
@@ -99,7 +99,7 @@ conda activate mon
 ./bin/run-video.sh "aic23-autocheckout" "testB" "all" "yes"
 ```
 
-The results will be located at: `deepacov2/track4.txt`
+The results will be located at: `mon/track4.txt`
 
 </details>
   
