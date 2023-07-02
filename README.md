@@ -22,7 +22,7 @@ docker run --name deepacov2 --gpus all -it phlong/deepacov2:infer
 
 The directory hierarchy should look like this:
 ```text
-deepacov2
+mon
   |__ data 
   |__ bin
   |__ data
